@@ -6,20 +6,21 @@
     <% end %>
 
 <%= form_for(@signup) do |f| %>
-    <label>Signup's name:</label><br>
-    <%= f.text_field :name %><br>
-  
-    <label>Signup's Breed:</label><br>
-    <%= f.text_field :breed %><br>
-
-    <label>Age:</label><br>
-    <%= f.number_field :age %><br>
-
-    <label>Sex:</label><br>
-    <%= f.text_field :sex %><br>
     
   
+    <label>Walker:</label><br>
+    <%= f.collection_select :walker_id, Walker.all, :id, :full_name, prompt: true  %><br>
 
+    <label>dog:</label><br>
+    <%= f.collection_select :dog_id, Dog.all, :id, :name, prompt: true %><br>
+
+    <label>Date:</label><br>
+    <%= f.date_field :date %><br>
+
+    <label>Time:</label><br>
+    <%= f.time_field :time %><br>
+
+   
     
     <%= f.submit %>
   <% end %>

@@ -11,5 +11,16 @@
     <li>Sex: <%= @dog.sex %></li>
     <br>
 
+</ul>
 
+<h4> Past walks</h4>
+
+<ul>
+    <% @dog.signups.each do |walk| %>
+    <li>Date : <%= walk.date.strftime '%B %-d, %Y' %>
+    <br>
+    Time: <%= walk.time.strftime '%l:%M %P' %>
+    <br>
+    Walker :<%= walk.walker.full_name%> </li>
+    <% end %>
 </ul>

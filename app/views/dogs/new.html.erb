@@ -15,9 +15,14 @@
     <label>Age:</label><br>
     <%= f.number_field :age %><br>
 
-    <label>Sex:</label><br>
-    <%= f.text_field :sex %><br>
-    
+    <!--<label>Sex:</label><br>
+    <%= f.text_field :sex %><br>-->
+
+    <%= f.label :sex %>
+    <%= f.label :m %>
+    <%= f.radio_button :sex, "M"  %>
+    <%= f.label :f %>
+    <%= f.radio_button :sex, "F"  %><br>
   
 
     

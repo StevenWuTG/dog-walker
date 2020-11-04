@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2020_11_04_152604) do
     t.integer "walker_id", null: false
     t.integer "dog_id", null: false
     t.date "date"
-    t.integer "time"
+    t.time "time"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["dog_id"], name: "index_signups_on_dog_id"

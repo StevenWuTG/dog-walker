@@ -12,8 +12,8 @@ Walker.destroy_all
 Signup.destroy_all
 
 puts "making dogs"
-snoop = Dog.create(name: "Snoop", breed:"Gansta", age: 50, sex: "male")
-luma = Dog.create(name: "Luma", breed: "Labador", age: 3, sex: "female")
+snoop = Dog.create(name: "Snoop", breed:"Gansta", age: 50, sex: "M")
+luma = Dog.create(name: "Luma", breed: "Labador", age: 3, sex: "F")
 
 puts "making walkers"
 steven = Walker.create(first_name: "Steven", last_name: "Wu", email:"stevenwu@email.com", img_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png")

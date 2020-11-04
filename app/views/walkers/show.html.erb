@@ -1,9 +1,14 @@
-<h1><%= @walker.first_name %> <%= @walker.last_name %> </h1>
+<!--<h1><%= @walker.first_name %> <%= @walker.last_name %> </h1>-->
+<h1><%= @walker.full_name %></h1>
+
 <br>
 
 <ul>
     <li>Email: <%= @walker.email %></li>
     <br>
     <img src=<%= @walker.img_url%> width="100" height="100">
+    <!--<%= image_tag @walker.img_url %>-->
+
+    
 
 </ul>
