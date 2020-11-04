@@ -1,0 +1,12 @@
+<h1>Walkers Page</h1>
+
+<ul>
+    <% @walkers.each do |walker| %>
+    <li><%= link_to walker.first_name, walker_path(walker) %></li>
+    <% end %>
+
+</ul>
+
+
+
+<h4>New Walkers :<br> <%= link_to 'Sign up Page', new_walker_path  %></h4>

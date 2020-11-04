@@ -1,0 +1,12 @@
+<h1>Signup Page</h1>
+
+<ul>
+    <% @signups.each do |signup| %>
+    <li><%= link_to signup.name, signup_path(signup) %></li>
+    <% end %>
+
+</ul>
+
+
+
+<h4>New signups :<br> <%= link_to 'Sign up Page', new_signup_path  %></h4>

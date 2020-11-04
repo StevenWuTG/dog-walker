@@ -5,3 +5,22 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "destroying seeds"
+Dog.destroy_all
+Walker.destroy_all
+Signup.destroy_all
+
+puts "making dogs"
+snoop = Dog.create(name: "Snoop", breed:"Gansta", age: 50, sex: "male")
+luma = Dog.create(name: "Luma", breed: "Labador", age: 3, sex: "female")
+
+puts "making walkers"
+steven = Walker.create(first_name: "Steven", last_name: "Wu", email:"stevenwu@email.com", img_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png")
+alice = Walker.create(first_name: "Alice", last_name: "Jansen", email:"alicejansen@email.com", img_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png")
+
+
+puts "seeds done"
+
+
+
